@@ -1,5 +1,6 @@
 ## The first function gets the inverse of a given matrix and saves it to the cache. The second function
 ##also calculates the inverse, but if the matrix is the same as the first one, then it only loads it form the cache.
+
 ## This function creates a special matrix that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -17,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Returns the inverse of the matrix x.
+## Returns the inverse of the matrix x. If the matrix is the same, then it loads it from the cache.
 
 cacheSolve <- function(x, ...) {
 m <- x$getsolve()
